@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id ="testService"  class="com.lzj.test.v1.bean.TestService"  scope = "singleton">
+        <property id = "testService" ref ="testDao"></property>
+        <property id ="name" value="张三"></property>
+    </bean>
+    <bean id="testDao" class="com.lzj.test.v1.bean.TestDao"></bean>
+</beans>
